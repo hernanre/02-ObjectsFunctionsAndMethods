@@ -23,8 +23,8 @@ import rosegraphics as rg
 import math
 
 def main():
-    chair(3, 4)
-    print(chair(3, 4))
+    ans = chair(3, 4)
+    print(ans)
     drew('red', 3)
     """
     TESTS the functions that you will write below.

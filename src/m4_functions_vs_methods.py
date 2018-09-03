@@ -81,12 +81,14 @@ def main():
     turtle = rg.SimpleTurtle('square')
     draw_many_squares(turtle, 3, 75, 15)
 
-    turtle3()
+    turtle3('purple', 3)
 
     ###########################################################################
     # When the TODOs ask you to test YOUR code, put YOUR tests below this:
     ###########################################################################
-
+    try_methods ('brown', 5)
+    try_functions()
+    try_methods_and_functions()
     window.close_on_mouse_click()  # Your code must be ABOVE this statement
 
 
@@ -170,7 +172,7 @@ def turtle3(color, thickness):
     maja.end_fill()
 
 
-def try_methods():
+def try_methods(color, thickness):
     """
     Constructs a SimpleTurtle and sets its   pen   to a new rg.Pen
     that is 'brown' with thickness 5.
@@ -180,14 +182,26 @@ def try_methods():
       -- forward    50 units
       -- backward  100 units
     """
+
+    elias = rg.SimpleTurtle()
+    elias.pen = rg.Pen(color, thickness)
+    elias.forward(150)
+    elias.left(90)
+    elias.forward(50)
+    elias.backward(100)
     ###########################################################################
-    # TODO: 3. Implement and test this function, per its doc-string above.
+    # DONE: 3. Implement and test this function, per its doc-string above.
     #     (To test it, put a statement in   main   that calls this function.)
     ###########################################################################
 
 
+
+
 def try_functions():
     # IMPORTANT: Read the NOTE below before you try to solve this TO-DO!
+    jump_and_move_turtle(200, 100, 300, 30)
+    jump_and_move_turtle(100, 200, 0, 0)
+    jump_and_move_turtle(-50, 50, 100, 100)
     """
     Causes several SimpleTurtles to do the following:
      -- One jumps to (200, 100), then moves (while drawing) to (300, 30)
@@ -208,6 +222,39 @@ def try_functions():
 
 def try_methods_and_functions():
     # IMPORTANT: Read the NOTE below before you try to solve this TO-DO!
+    rosie = rg.SimpleTurtle()
+    rosie.pen = rg.Pen('blue', 5)
+
+    rosie.backward(150)
+
+    rosie.speed = 1
+    draw_many_squares(rosie, 2, 100, 30)
+
+    rosie.speed = 5
+    rosie.pen.color = 'red'
+    draw_many_squares(rosie, 10, 50, 15)
+
+    rosie.speed = 100
+    rosie.pen.thickness = 35
+    draw_many_squares(rosie, 8, 300, 60)
+
+    rosie.pen = rg.Pen('black', 3)
+
+    rosie.backward(200)
+
+    rosie.draw_circle(30)
+
+    rosie.draw_square(50)
+
+
+
+
+
+
+
+
+
+
     """
     Constructs a SimpleTurtle and sets its   pen  to a new rg.Pen
     that is 'blue' with thickness 5.
