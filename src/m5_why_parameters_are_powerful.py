@@ -238,6 +238,7 @@ def awesome_ricardo_circles(point, radius_difference, num_of_circles, pen_color,
         ricardo.draw_circle(radius_difference * x)
 
 
+
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # -------------------------------------------------------------------
