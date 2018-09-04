@@ -255,6 +255,7 @@ def try_methods_and_functions():
 
 
 
+
     """
     Constructs a SimpleTurtle and sets its   pen  to a new rg.Pen
     that is 'blue' with thickness 5.
